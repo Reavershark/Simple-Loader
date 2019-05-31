@@ -31,7 +31,7 @@ namespace goodTimes
                 // Encrypt and Encode the data:
                 byte[] e_data = Encrypt(data, Resources.key, Resources.iv);
                 String finalPayload = Convert.ToBase64String(e_data);
-                Console.WriteLine($"\n\n        public static string walrus = " + '"' + $"{finalPayload}" + '"' + ';');
+                Console.WriteLine($"\n        public static string walrus = " + '"' + $"{finalPayload}" + '"' + ';');
 
                 Environment.Exit(0);
             }
